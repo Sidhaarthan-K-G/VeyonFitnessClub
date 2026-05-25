@@ -1,9 +1,15 @@
 .header{
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid gray;
+    position: fixed;
+    top: 0px;
+    left : 0px;
+    right: 0px;
+    z-index: 1;
 }
 .h-title{
     color: rgba(255, 255, 255, 0.734);
@@ -31,6 +37,7 @@ a{
     color: rgb(74, 71, 71);
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
 }
 .h-btn{
     display: flex;
@@ -44,7 +51,95 @@ a{
     border-width: 0px;
     border-radius: 5px;
     width: 140px;
+    transition: all 0.3s ease;
+}
+.h-btn:hover{
+    transform: translateX(6px);
 }
 a:hover{
     color: white;
+    transform: translateY(-5px);
+}
+
+
+@media screen and (max-width: 768px){
+
+    .header{
+        padding: 15px;
+    }
+
+    .h-links{
+        gap: 15px;
+    }
+
+    .h-title{
+        font-size: 20px;
+    }
+
+    a{
+        font-size: 12px;
+    }
+
+    .h-btn{
+        width: 100px;
+        font-size: 10px;
+        padding: 8px;
+        gap: 5px;
+    }
+
+    .h-dot{
+        width: 8px;
+        height: 8px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .header{
+        padding: 12px 10px;
+    }
+
+    .h-links{
+        gap: 10px;
+    }
+
+    .h-title{
+        font-size: 16px;
+    }
+
+    a{
+        font-size: 10px;
+    }
+
+    .h-btn{
+        width: 85px;
+        font-size: 9px;
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .header{
+        padding: 15px 20px;
+    }
+
+    .h-links{
+        gap: 25px;
+    }
+
+    .h-title{
+        font-size: 22px;
+    }
+
+    a{
+        font-size: 14px;
+    }
+
+    .h-btn{
+        width: 120px;
+        font-size: 12px;
+        padding: 9px;
+    }
 }

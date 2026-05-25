@@ -97,157 +97,177 @@ span{
 
 /* ---------- TABLET ---------- */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
-    .hero{
+    .hero {
         padding: 110px 30px 40px;
         gap: 24px;
     }
 
-    .he-title{
+    .he-title {
         width: 52%;
-        padding: 28px;
+        padding: 24px;
     }
 
-    .he-radar{
+    .he-radar {
         width: 48%;
     }
 
-    .he-run{
-        font-size: 78px;
+    .he-run {
+        font-size: 72px;
+        line-height: 1;
     }
 
-    .he-desc{
+    .he-desc {
         font-size: 14px;
         line-height: 1.7;
     }
 
-    .he-information{
+    .he-information {
         gap: 18px;
         flex-wrap: wrap;
     }
 
-    .he-value{
+    .he-value {
         font-size: 22px;
     }
 
-    .he-btns{
+    .he-btns {
         gap: 14px;
     }
 
     .he-join-btn,
-    .he-view-btn{
-        padding: 10px 15px;
-        font-size: 12px;
+    .he-view-btn {
+        padding: 10px 18px;
+        font-size: 13px;
     }
 }
 
 /* ---------- MOBILE ---------- */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    .hero{
+    .hero {
         flex-direction: column;
-        padding: 95px 18px 35px;
-        gap: 20px;
+        padding: 90px 20px 40px;
+        gap: 24px;
         height: auto;
+        min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    .he-title{
+    .he-title {
         width: 100%;
         height: auto;
         padding: 22px;
+        box-sizing: border-box;
     }
 
-    .he-radar{
+    .he-radar {
         width: 100%;
+        height: auto;
         justify-content: center;
     }
 
-    .he-img{
+    .he-img {
         width: 100%;
-        max-width: 430px;
+        max-width: 400px;
         height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
         border-right: none;
         border-bottom: 4px solid orangered;
     }
 
-    .he-run{
-        font-size: 58px;
+    .he-run {
+        font-size: 56px;
+        line-height: 0.95;
     }
 
-    .he-desc{
+    .he-desc {
         font-size: 13px;
-        line-height: 1.6;
-        margin-top: 14px;
+        line-height: 1.65;
+        margin-top: 12px;
     }
 
-    .he-btns{
-        margin-top: 20px;
-        gap: 12px;
-        flex-wrap: wrap;
-    }
-
-    .he-join-btn,
-    .he-view-btn{
-        flex: 1;
-        min-width: 150px;
-        justify-content: center;
-        font-size: 11px;
-        padding: 11px;
-    }
-
-    .he-information{
-        margin-top: 26px;
+    .he-information {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 18px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 20px;
     }
 
-    .he-value{
+    .he-value {
         font-size: 20px;
     }
 
-    .he-type{
-        font-size: 10px;
+    .he-type {
+        font-size: 11px;
+    }
+
+    .he-btns {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .he-join-btn,
+    .he-view-btn {
+        flex: 1;
+        min-width: 140px;
+        font-size: 12px;
+        padding: 11px 14px;
     }
 }
 
 /* ---------- SMALL MOBILE ---------- */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
-    .hero{
-        padding: 85px 14px 28px;
+    .hero {
+        padding: 80px 14px 32px;
+        gap: 20px;
     }
 
-    .he-run{
-        font-size: 48px;
-        line-height: 0.95;
+    .he-title {
+        padding: 16px;
     }
 
-    .he-title{
-        padding: 18px;
+    .he-run {
+        font-size: 44px;
+        line-height: 1;
     }
 
-    .he-desc{
+    .he-desc {
         font-size: 12px;
+        line-height: 1.6;
     }
 
-    .he-btns{
+    .he-information {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .he-value {
+        font-size: 17px;
+    }
+
+    .he-type {
+        font-size: 10px;
+    }
+
+    .he-btns {
         flex-direction: column;
+        gap: 10px;
+        margin-top: 16px;
     }
 
     .he-join-btn,
-    .he-view-btn{
+    .he-view-btn {
         width: 100%;
-    }
-
-    .he-information{
-        gap: 14px;
-    }
-
-    .he-value{
-        font-size: 18px;
+        font-size: 12px;
+        padding: 11px;
     }
 }

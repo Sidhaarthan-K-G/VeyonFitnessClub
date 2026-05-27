@@ -6,7 +6,7 @@
 
 }
 .w-desc{
-    font-family:fantasy;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .w-p1{
     color: orangered;
@@ -19,7 +19,7 @@
     color: #827f7c;
 }
 .w-h1{
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ffffff;
 }
 .w-what{
@@ -70,8 +70,53 @@
         #285AEB 90%
     );  
 }
+.w-w-btn{
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px;
+    background-color: #110F0C;
+    border: 1px solid #827f7c;
+    border-radius: 5px;
+    color: #827f7c;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+.w-i-btn{
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px;
+    background-color: #110F0C;
+    border: 1px solid #827f7c;
+    border-radius: 5px;
+    color: #827f7c;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+.w-w-scanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.w-i-scanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.w-w-btn:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+.w-i-btn:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
     .whatsapp {
         padding: 24px;
@@ -94,6 +139,12 @@
 
     .w-lists {
         font-size: 14px;
+    }
+    .w-w-btn,
+    .w-i-btn {
+        font-size: 14px;
+        padding: 9px;
+        gap: 8px;
     }
 }
 
@@ -135,6 +186,18 @@
     .w-qr {
         transform: scale(0.9);
     }
+    .w-w-btn,
+    .w-i-btn {
+        font-size: 13px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .w-w-btn:hover,
+    .w-i-btn:hover {
+        transform: translateY(-2px);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -171,5 +234,12 @@
 
     .w-p3 {
         font-size: 11px;
+    }
+    .w-w-btn,
+    .w-i-btn {
+        font-size: 12px;
+        padding: 9px;
+        width: 100%;
+        gap: 6px;
     }
 }

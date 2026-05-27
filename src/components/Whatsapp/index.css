@@ -243,3 +243,22 @@
         gap: 6px;
     }
 }
+
+.w-qr {
+    pointer-events: none;
+}
+
+.w-w-btn,
+.w-i-btn {
+    position: relative;
+    z-index: 5;
+}
+
+.w-w-btn a,
+.w-i-btn a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

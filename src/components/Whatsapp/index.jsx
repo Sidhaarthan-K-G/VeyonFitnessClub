@@ -38,14 +38,28 @@ const WhatsApp = () => {
           <p className="w-p3">
             SCAN TO JOIN US ON <FaWhatsapp className="w-w" />
           </p>
-          <button className="w-w-btn">Join us on <FaWhatsapp className="w-w" /></button>
+          <a
+            href={whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-w-btn"
+          >
+            Join us on <FaWhatsapp className="w-w" />
+          </a>
         </div>
         <div className="w-i-scanner">
           <QRCodeCanvas value={instagram} size={180} className="w-qr" />
           <p className="w-p3">
             SCAN TO FOLLOW US ON <FaInstagram className="w-i" />
           </p>
-          <button className="w-i-btn">Join us on <FaInstagram className="w-i" /></button>
+          <a
+            href={instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-i-btn"
+          >
+            Follow us on <FaInstagram className="w-i" />
+          </a>
         </div>
       </div>
     </div>

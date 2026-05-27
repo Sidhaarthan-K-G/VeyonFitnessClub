@@ -1,0 +1,175 @@
+.whatsapp{
+    background-color: #110F0C;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.w-desc{
+    font-family:fantasy;
+}
+.w-p1{
+    color: orangered;
+    font-size: medium;
+    display: flex;
+    
+}
+.w-p2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #827f7c;
+}
+.w-h1{
+    font-family: fantasy;
+    color: #ffffff;
+}
+.w-what{
+    color: orangered;
+}
+.w-lists{
+    color: #827f7c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
+
+}
+.w-list::marker{
+    color: orangered;
+}
+.w-scanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px;
+}
+.w-qr{
+    border: 5px solid orangered;
+    padding: 10px;
+    border-radius: 5px;
+}
+.w-p3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #827f7c;
+}
+.w-w{
+    font-size: 50px;
+    color: #25D366;
+}
+.w-i{
+    font-size: 50px;
+    border-width: 0px;
+    border-radius: 10px;
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%
+    );  
+}
+
+
+@media screen and (max-width: 1024px) {
+    .whatsapp {
+        padding: 24px;
+        gap: 30px;
+    }
+
+    .w-scanner {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .w-h1 {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .w-p2 {
+        font-size: 14px;
+    }
+
+    .w-lists {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .whatsapp {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 22px 18px;
+    }
+
+    .w-desc {
+        width: 100%;
+    }
+
+    .w-p1 {
+        justify-content: center;
+    }
+
+    .w-h1 {
+        font-size: 32px;
+    }
+
+    .w-p2 {
+        font-size: 13px;
+    }
+
+    .w-lists {
+        text-align: left;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .w-scanner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .w-qr {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .whatsapp {
+        padding: 16px 12px;
+    }
+
+    .w-h1 {
+        font-size: 26px;
+    }
+
+    .w-p2 {
+        font-size: 12px;
+    }
+
+    .w-lists {
+        font-size: 12px;
+    }
+
+    .w-scanner {
+        gap: 20px;
+    }
+
+    .w-qr {
+        transform: scale(0.8);
+        padding: 6px;
+        border-width: 3px;
+    }
+
+    .w-w,
+    .w-i {
+        font-size: 40px;
+    }
+
+    .w-p3 {
+        font-size: 11px;
+    }
+}

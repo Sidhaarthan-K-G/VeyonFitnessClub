@@ -62,100 +62,79 @@ a:hover{
 }
 
 
-/* ---------- TABLET ---------- */
-
-@media screen and (max-width: 1024px) {
-
-    .header {
-        padding: 14px 28px;
+@media screen and (max-width: 1024px){
+    .h-links{
+        gap: 30px;
     }
 
-    .h-links {
-        gap: 32px;
-    }
-
-    .h-title {
+    .h-title{
         font-size: 20px;
     }
 
-    .h-links a {
-        font-size: 14px;
-    }
-
-    .h-btn {
-        width: 125px;
+    .h-btn{
+        width: 120px;
         font-size: 13px;
-        padding: 9px 12px;
     }
 }
 
-/* ---------- MOBILE ---------- */
-
-@media screen and (max-width: 768px) {
-
-    .header {
-        padding: 12px 20px;
-        gap: 12px;
+@media screen and (max-width: 768px){
+    .header{
+        flex-wrap: wrap;
+        padding: 10px 12px;
+        gap: 10px;
     }
 
-    .h-links {
-        gap: 20px;
+    .h-app-title{
+        flex: 1;
+        min-width: 120px;
     }
 
-    .h-title {
+    .h-links{
+        order: 3;
+        width: 100%;
+        justify-content: space-around;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .h-btn{
+        order: 2;
+        width: auto;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .h-title{
         font-size: 17px;
     }
-
-    .h-links a {
-        font-size: 13px;
-    }
-
-    .h-btn {
-        width: 105px;
-        font-size: 12px;
-        padding: 8px 10px;
-        gap: 6px;
-    }
 }
 
-/* ---------- SMALL MOBILE ---------- */
-
-@media screen and (max-width: 480px) {
-
-    .header {
-        padding: 10px 14px;
+@media screen and (max-width: 480px){
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
         gap: 8px;
-        flex-wrap: nowrap;
-        overflow: hidden;
+        padding: 10px;
     }
 
-    .h-links {
-        gap: 14px;
-        flex-shrink: 1;
-        min-width: 0;
+    .h-links{
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
     }
 
-    .h-title {
-        font-size: 15px;
-        white-space: nowrap;
-    }
-
-    .h-links a {
-        font-size: 12px;
-        white-space: nowrap;
-    }
-
-    .h-btn {
+    .h-btn{
+        align-self: flex-end;
         width: auto;
-        min-width: 80px;
         font-size: 11px;
         padding: 7px 10px;
-        flex-shrink: 0;
     }
 
-    .h-dot {
-        width: 8px;
-        height: 8px;
-        flex-shrink: 0;
+    .h-title{
+        font-size: 15px;
+    }
+
+    .h-links a{
+        font-size: 12px;
     }
 }

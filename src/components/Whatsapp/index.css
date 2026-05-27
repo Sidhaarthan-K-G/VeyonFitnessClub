@@ -244,10 +244,6 @@
     }
 }
 
-.w-qr {
-    pointer-events: none;
-}
-
 .w-w-btn,
 .w-i-btn {
     position: relative;
@@ -262,3 +258,11 @@
     align-items: center;
     gap: 10px;
 }
+
+
+.w-w-btn,
+.w-i-btn {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+} 

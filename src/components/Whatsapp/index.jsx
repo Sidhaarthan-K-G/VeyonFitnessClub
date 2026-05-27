@@ -2,8 +2,8 @@ import "./index.css";
 import { QRCodeCanvas } from "qrcode.react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 const WhatsApp = () => {
-    const whatsapp = import.meta.env.VITE_WHATSAPP_LINK
-    const instagram = import.meta.env.VITE_INSTAGRAM_LINK
+  const whatsapp = import.meta.env.VITE_WHATSAPP_LINK;
+  const instagram = import.meta.env.VITE_INSTAGRAM_LINK;
   return (
     <div className="whatsapp">
       <div className="w-desc">
@@ -12,11 +12,11 @@ const WhatsApp = () => {
           ───
         </p>
         <h1 className="w-h1">
-          JOIN THE
+          STAY CONNECTED
           <br />
-          <span className="w-what">WHATSAPP</span>
+          WITH OUR
           <br />
-          GROUP
+          <span className="w-what">SOCIALS</span>
         </h1>
         <p className="w-p2">
           All event updates, route drops, last-minute changes, and
@@ -34,20 +34,16 @@ const WhatsApp = () => {
       </div>
       <div className="w-scanner">
         <div className="w-w-scanner">
-          <QRCodeCanvas
-            value={whatsapp}
-            size={180}
-            className="w-qr"
-          />
-          <p className="w-p3">SCAN TO JOIN US ON  <FaWhatsapp className="w-w" /> </p>
+          <QRCodeCanvas value={whatsapp} size={180} className="w-qr" />
+          <p className="w-p3">
+            SCAN TO JOIN US ON <FaWhatsapp className="w-w" />{" "}
+          </p>
         </div>
         <div className="w-i-scanner">
-          <QRCodeCanvas
-            value={instagram}
-            size={180}
-            className="w-qr"
-          />
-          <p className="w-p3">SCAN TO FOLLOW US ON  <FaInstagram className="w-i" /> </p>
+          <QRCodeCanvas value={instagram} size={180} className="w-qr" />
+          <p className="w-p3">
+            SCAN TO FOLLOW US ON <FaInstagram className="w-i" />{" "}
+          </p>
         </div>
       </div>
     </div>

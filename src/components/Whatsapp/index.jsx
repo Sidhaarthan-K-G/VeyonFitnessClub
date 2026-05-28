@@ -1,9 +1,8 @@
 import "./index.css";
-import { QRCodeCanvas } from "qrcode.react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 const WhatsApp = () => {
-  const whatsapp = import.meta.env.VITE_WHATSAPP_LINK;
-  const instagram = import.meta.env.VITE_INSTAGRAM_LINK;
+  const whatsapp = import.meta.env.VITE_WHATSAPP_LINK || '#';
+  const instagram = import.meta.env.VITE_INSTAGRAM_LINK || '#';
   return (
     <div className="whatsapp">
       <div className="w-desc">
@@ -34,10 +33,6 @@ const WhatsApp = () => {
       </div>
       <div className="w-scanner">
         <div className="w-w-scanner">
-          <QRCodeCanvas value={whatsapp} size={180} className="w-qr" />
-          <p className="w-p3">
-            SCAN TO JOIN US ON <FaWhatsapp className="w-w" />
-          </p>
           <a
             href={whatsapp}
             target="_blank"
@@ -48,10 +43,6 @@ const WhatsApp = () => {
           </a>
         </div>
         <div className="w-i-scanner">
-          <QRCodeCanvas value={instagram} size={180} className="w-qr" />
-          <p className="w-p3">
-            SCAN TO FOLLOW US ON <FaInstagram className="w-i" />
-          </p>
           <a
             href={instagram}
             target="_blank"
